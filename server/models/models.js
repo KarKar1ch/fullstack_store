@@ -1,5 +1,5 @@
-import sequelize from "../bg";
-import { DataTypes } from "sequelize";
+import sequelize from "../bg.js";
+import { DataTypes, Model } from "sequelize";
 
 export const User = sequelize.define('user', {
     id: {type:DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
@@ -76,5 +76,6 @@ DeviceInfo.belongsTo(Device);
 
 Type.belongsToMany(Brand, {through: TypeBrand});
 Brand.belongsToMany(Type, {through: TypeBrand});
+
 
 
