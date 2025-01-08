@@ -1,5 +1,5 @@
 import Router from 'express' 
-import { deviceController } from '../controllers/deviceController'
+import { deviceController } from '../controllers/deviceController.js'
 export const router = new Router()
 
 router.post('/', deviceController.create)

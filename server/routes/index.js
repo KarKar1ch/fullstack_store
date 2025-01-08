@@ -8,5 +8,5 @@ import { router as userRouter } from './userRouter.js';
 
 router.use('/user', userRouter)
 router.use('/type', typeRouter)
-router.use('/device', brandRouter)
-router.use('/brand', deviceRouter)
+router.use('/device', deviceRouter)
+router.use('/brand',  brandRouter)
