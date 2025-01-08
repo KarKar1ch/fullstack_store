@@ -1,5 +1,5 @@
 import sequelize from "../bg.js";
-import { DataTypes, Model } from "sequelize";
+import { DataTypes } from "sequelize";
 
 export const User = sequelize.define('user', {
     id: {type:DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
